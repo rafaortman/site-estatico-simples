@@ -19,23 +19,6 @@
     }
 }
 
-.custom-logo-link {
-    padding: .5rem;
-    display: block;
-    height: 100%;
-
-    .custom-logo {
-        display: block;
-        height: 100%;
-        width: auto;
-    }
-}
-
-.menu_container {
-    flex-grow: 1;
-    background-color: white;
-}
-
 .menu {
     list-style: none;
     margin: 0;
@@ -143,64 +126,5 @@
     }
     @media(max-width: 750px) {
         display: block;
-    }
-}
-
-#buscaBt {
-    height: 100%;
-    background-color: white;
-}
-
-#searchForm {
-    position: fixed;
-    text-align: right;
-    transition: .3s;
-    width: 100%;
-    padding: .5rem;
-    background-color: white;
-    top: -70px;
-    z-index: -1;
-    opacity: 0;
-    box-shadow: 0 5px 5px transparentize(black,.8);
-    &.ativo {
-        opacity: 1;
-        top: 50px;
-    }
-    form {
-        input[type="text"] {
-            border: none;
-            font-size: .8rem;
-            background-color: transparentize(black,.9);
-            border-top-right-radius: 0;
-            border-bottom-right-radius: 0;
-            padding: .75rem;
-        }
-        input[type="submit"] {
-            border: none;
-            padding: .75rem;
-            margin-left: -4px;
-            border-top-left-radius: 0;
-            border-bottom-left-radius: 0;
-        }
-    }
-}
-
-.wpm-language-switcher {
-    margin-top: 0;
-    display: flex;
-    li {
-        display: inline-block;
-        > * {
-            display: block;
-            height: 50px;
-            width: 40px;
-            display: flex;
-            justify-content: center;
-            flex-direction: column;
-            align-items: center;
-        }
-        &.active {
-            display: none;
-        }
     }
 }
